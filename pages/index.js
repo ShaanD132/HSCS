@@ -1,4 +1,4 @@
-import {Box, Heading, Container, Text, useColorModeValue} from "@chakra-ui/react"
+import {Box, Heading, Container, useColorModeValue} from "@chakra-ui/react"
 
 const Page = () => {
     const textColor = useColorModeValue("#1B1725", "#DDD5D0")
