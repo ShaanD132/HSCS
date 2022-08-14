@@ -12,18 +12,18 @@ const Page = () => {
                         <Heading as = "h2" variant = "page-title" fontWeight = "normal" color = {textColor} fontSize = {{base: 40, md: 50}}>
                             HSCS Welcomes You
                         </Heading>
-                        <Box  px = {10} mt = {8} fontFamily = "Hibana" fontSize = {{base: 20, md: 23}}>
+                        <Box  px = {{base: 0, md: 10}} mt = {8} fontFamily = "Hibana" fontSize = {{base: 20, md: 23}}>
                             <p className = "logo-letters">H</p>igh-<p className = "logo-letters">S</p>chool <p className = "logo-letters">C</p>omputer <p className = "logo-letters">S</p>cience is a platform made for IGCSE and IB students. We aim to provide the support needed to pass their international examinations regarding Computer Science. <br /><br /> The website is still under construction.
                         </Box>
                     </Box>
                 </Section>
 
                 <Section delay = {0.9}>
-                    <Box mt = {16} px = {10}>
+                    <Box mt = {16} px = {{base: 0, md: 10}}>
                         <Heading as = "h2" variant = "section-title" color = {textColor} fontSize = {{base: 40, md: 50}}>
                             IGCSE Topics
                         </Heading>
-                        <Box mt = {5} px = {10}>
+                        <Box mt = {5} px = {{base: 0, md: 10}}>
                             <OrderedList fontFamily = "Hibana" fontSize = {{base: 18, md: 20}} lineHeight = {2.5}>
                                 <ListItem>
                                     Binary Systems and Hexadecimal
@@ -66,11 +66,11 @@ const Page = () => {
                 </Section>
 
                 <Section delay = {1.7}>
-                    <Box mt = {16} px = {10}>
+                    <Box mt = {16} px = {{base: 0, md: 10}}>
                         <Heading as = "h2" variant = "section-title" color = {textColor} fontSize = {{base: 40, md: 50}}>
                             IB Topics
                         </Heading>
-                        <Box mt = {5} px = {10}>
+                        <Box mt = {5} px = {{base: 0, md: 10}}>
                             <OrderedList fontFamily = "Hibana" fontSize = {{base: 18, md: 20}} lineHeight = {2.5}>
                                 <ListItem>
                                     System Fundamentals

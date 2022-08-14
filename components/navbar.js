@@ -98,10 +98,10 @@ const Navbar = props => {
                                     <MenuItem as = {Link}>About Us</MenuItem>
                                 </NextLink>
                                 <NextLink href = "/notes" passHref>
-                                    <MenuItem as = {Link}>Dishes</MenuItem>
+                                    <MenuItem as = {Link}>Notes</MenuItem>
                                 </NextLink>
                                 <NextLink href = "/qb" passHref>
-                                    <MenuItem as = {Link}>Resume</MenuItem>
+                                    <MenuItem as = {Link}>Question Bank</MenuItem>
                                 </NextLink>
                                 <NextLink href = "/contact" passHref>
                                     <MenuItem as = {Link}>Contact Us</MenuItem>

@@ -27,7 +27,7 @@ const Fonts = () => (
     @font-face {
         font-family: "Outfit";
         src:
-            url("/fonts/Outfit-Medium.ttf")
+            url("/fonts/Outfit-SemiBold.ttf")
             format("truetype");
     }
 

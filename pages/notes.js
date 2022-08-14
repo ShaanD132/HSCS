@@ -10,10 +10,10 @@ const Notes = () => {
             <Container maxW = "container.lg">
                 <Section delay = {0.1}>
                     <Box mt = {20}>
-                        <Heading as = "h2" variant = "page-title" fontWeight = "normal" color = {textColor} fontSize = {{base: 40, md: 50}}>
+                        <Heading as = "h2" variant = "page-title" fontWeight = "normal" color = {textColor} fontSize = {{base: 30,  sm: 40, md: 50}}>
                             Under Construction
                         </Heading>
-                        <Box  px = {10} mt = {8} fontFamily = "Hibana" fontSize = {23}>
+                        <Box  px = {{base: 0, md: 10}} mt = {8} fontFamily = "Hibana" fontSize = {{base: 20, md: 23}}>
                             The Notes section is still under construction and should be ready by 29/08/22. Please be patient until then.
                         </Box>
                     </Box>

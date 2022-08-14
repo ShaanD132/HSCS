@@ -6,15 +6,15 @@ const Igcse = () => {
 
     return(
         <Box>
-            <Heading as = "h2" variant = "page-title" fontWeight = "normal" color = {textColor} fontSize = {{base: 40, md: 50}}>
+            <Heading as = "h2" variant = "page-title" fontWeight = "normal" color = {textColor} fontSize = {{base: 30, sm: 40,  md: 50}}>
                 IGCSE Computer Science - 0478
             </Heading>
-            <Box px = {10} mt = {8} fontFamily = "Hibana" fontSize = {23}>
+            <Box px = {{base: 0, md: 10}} mt = {8} fontFamily = "Hibana" fontSize = {{base: 20, md: 23}}>
                 <OrderedList>
                 <ListItem py = {1}>
                     Binary Systems and Hexadecimal
 
-                        <UnorderedList fontSize = {20} py = {1} ml = {14}>
+                        <UnorderedList fontSize = {{base: 18, md: 20}} py = {1} ml = {{base: 8, md: 14}}>
                             <ListItem py = {1}>
                                 Binary System
                             </ListItem>
@@ -28,7 +28,7 @@ const Igcse = () => {
                 <ListItem py = {1}>
                     Communication and Internet Technologies
 
-                    <UnorderedList fontSize = {20} py = {1} ml = {14}>
+                    <UnorderedList fontSize = {{base: 18, md: 20}} py = {1} ml = {{base: 8, md: 14}}>
                             <ListItem py = {1}>
                                 Data Transmission
                             </ListItem>
@@ -46,7 +46,7 @@ const Igcse = () => {
                 <ListItem py = {1}>
                     Logic Gates and Logic Circuits
 
-                    <UnorderedList fontSize = {20} py = {1} ml = {14}>
+                    <UnorderedList fontSize = {{base: 18, md: 20}} py = {1} ml = {{base: 8, md: 14}}>
                             <ListItem py = {1}>
                                 Logic Gates + Truth Tables
                             </ListItem>
@@ -60,7 +60,7 @@ const Igcse = () => {
                 <ListItem py = {1}>
                     Operating Systems and Computer Architecture
 
-                    <UnorderedList fontSize = {20} py = {1} ml = {14}>
+                    <UnorderedList fontSize = {{base: 18, md: 20}} py = {1} ml = {{base: 8, md: 14}}>
                             <ListItem py = {1}>
                                 Operating Systems
                             </ListItem>
@@ -78,7 +78,7 @@ const Igcse = () => {
                 <ListItem py = {1}>
                     Input and Output Devices
 
-                    <UnorderedList fontSize = {20} py = {1} ml = {14}>
+                    <UnorderedList fontSize = {{base: 18, md: 20}} py = {1} ml = {{base: 8, md: 14}}>
                             <ListItem py = {1}>
                                 Input Devices
                             </ListItem>
@@ -95,7 +95,7 @@ const Igcse = () => {
                         <ListItem py = {1}>
                             Memory and Data Storage
 
-                            <UnorderedList fontSize = {20} py = {1} ml = {14}>
+                            <UnorderedList fontSize = {{base: 18, md: 20}} py = {1} ml = {{base: 8, md: 14}}>
                                     <ListItem py = {1}>
                                         File Formats and Compression
                                     </ListItem>
@@ -111,7 +111,7 @@ const Igcse = () => {
                 <ListItem py = {1}>
                     High-Level and Low-Level Languages
 
-                    <UnorderedList fontSize = {20} py = {1} ml = {14}>
+                    <UnorderedList fontSize = {{base: 18, md: 20}} py = {1} ml = {{base: 8, md: 14}}>
                             <ListItem py = {1}>
                                 Programming Languages
                             </ListItem>
@@ -125,7 +125,7 @@ const Igcse = () => {
                 <ListItem py = {1}>
                     Security and Ethics
 
-                    <UnorderedList fontSize = {20} py = {1} ml = {14}>
+                    <UnorderedList fontSize = {{base: 18, md: 20}} py = {1} ml = {{base: 8, md: 14}}>
                             <ListItem py = {1}>
                                 Security and Data Integrity
                             </ListItem>
@@ -151,7 +151,7 @@ const Igcse = () => {
                 <ListItem py = {1}>
                     Revision Tips
 
-                    <UnorderedList fontSize = {20} py = {1} ml = {14}>
+                    <UnorderedList fontSize = {{base: 18, md: 20}} py = {1} ml = {{base: 8, md: 14}}>
                             <ListItem py = {1}>
                                 How to Study during the Year
                             </ListItem>
