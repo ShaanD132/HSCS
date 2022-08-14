@@ -79,6 +79,33 @@ const IgMemory = () => {
                                     </UnorderedList>
                                 </Box>
                             </Box>
+                            <Box mt = {8} px = {10}>
+                                <Heading as = "h3" fontWeight = "normal" color = {textColor} fontFamily = "Zacbel X" fontSize = {{base: 30, md: 35}}>
+                                    Dynamic Random Access Memory (DRAM)
+                                </Heading>
+                                <Box mt = {5} px = {7} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    There are several chips on a DRAM board. Each chip contains a number of transistors and capacitors.
+                                </Box>
+
+                                <Box mt = {5} px = {7} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    Capacitors hold charge (electrical current).
+
+                                    <UnorderedList mt = {3} px = {8} fontSize = {{base: 16, md: 20}}>
+                                        <ListItem py = {2}>
+                                            A capacitor that holds charge corresponds to a bit value of 1
+                                        </ListItem>
+
+                                        <ListItem py = {2}>
+                                            A capacitor that does not hold charge corresponds to a bit value of 0
+                                        </ListItem>
+
+                                        <ListItem py = {2}>
+                                            (imagine converting anaolgue data to digital data - electrical current present = 1, current not present = 0)
+                                        </ListItem>
+                                    </UnorderedList>
+                                </Box>
+
+                            </Box>
                         </Box>
                     </Box>
                 </Container>
