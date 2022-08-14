@@ -106,7 +106,7 @@ const IgMemory = () => {
                                 </Box>
 
                                 <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
-                                    Transistors act as a switch - they allow the chip control circuitry to read the capacitor and they change the capacitor's value
+                                    Transistors act as a switch - they allow the chip control circuitry to read the capacitor and they change the capacitor&aposs value
                                 </Box>
 
                                 <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
@@ -118,7 +118,7 @@ const IgMemory = () => {
                                         </ListItem>
 
                                         <ListItem py = {2}>
-                                            Capicitors hold their charge for 15 microseconds before having to be 'refreshed'. i.e. filled with charge again
+                                            Capicitors hold their charge for 15 microseconds before having to be &aposrefreshed&apos. i.e. filled with charge again
                                         </ListItem>
                                     </UnorderedList>
                                 </Box>
@@ -174,7 +174,7 @@ const IgMemory = () => {
                                 </Box>
 
                                 <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
-                                    It uses 'flip flops' to store each bit of memory
+                                    It uses &aposflip flops&apos to store each bit of memory
                                 </Box>
 
                                 <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
