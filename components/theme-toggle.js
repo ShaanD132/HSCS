@@ -12,13 +12,14 @@ const ThemeToggle = () => {
             <motion.div
             style={{ display: 'inline-block' }}
             key={useColorModeValue('light', 'dark')}
-            initial={{ y:0, rotate: -180, opacity: 0 }}
-            animate={{ rotate: -360, opacity: 1 }}
-            exit={{ rotate: -180, opacity: 0 }}
-            transition={{ duration: 0.2 }}
+            initial={{ rotate: -180, x: -50, opacity: 0 }}
+            animate={{ rotate: -360, x: 0, opacity: 1 }}
+            exit={{ rotate: -180, x: 50,  opacity: 0 }}
+            transition={{ duration: 0.35 }}
             >
                 <IconButton
-                    aria-label="Toggle theme"
+                    aria-label = "Toggle theme"
+                    borderRadius = {100}
                     bg = {useColorModeValue('accentColor', '#fbe384')}
                     color = {useColorModeValue ("white", "black")}
                     icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
