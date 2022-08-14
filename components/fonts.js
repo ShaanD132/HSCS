@@ -25,12 +25,26 @@ const Fonts = () => (
     }
 
     @font-face {
+        font-family: "Arual";
+        src:
+            url("/fonts/Arual.ttf")
+            format("truetype");
+    }
+    
+    @font-face {
+        font-family: "Zacbel X Medium";
+        src:
+            url("/fonts/zacbelx-medium.otf")
+            format("opentype");
+    }
+
+    @font-face {
     font-family: "altertype";
     src:
         url("/fonts/altertype.otf")
         format("opentype");
     }
-    
+
     @font-face {
         font-family: "Trap";
         src:

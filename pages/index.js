@@ -9,18 +9,18 @@ const Page = () => {
             <Container maxW = "container.lg">
                 <Section delay = {0.1}>
                     <Box mt = {20}>
-                        <Heading as = "h2" variant = "page-title" fontWeight = "normal" color = {textColor} fontSize = {{base: 45, md: 50}}>
+                        <Heading as = "h2" variant = "page-title" fontWeight = "normal" color = {textColor} fontSize = {{base: 40, md: 50}}>
                             HSCS Welcomes You
                         </Heading>
                         <Box  px = {10} mt = {8} fontFamily = "Hibana" fontSize = {{base: 20, md: 23}}>
-                            <p className = "logo-letters">H</p>igh-<p className = "logo-letters">S</p>chool <p className = "logo-letters">C</p>omputer <p className = "logo-letters">S</p>cience is a platform made for IGCSE and IB students. We aim to provide the support needed to pass their international examinations regarding Computer Science. <br /><br /> This was made by an ex IB (SL) and IGCSE Computer Science student who earned a 7 and A* respectively. <br /><br />The website is still under construction.
+                            <p className = "logo-letters">H</p>igh-<p className = "logo-letters">S</p>chool <p className = "logo-letters">C</p>omputer <p className = "logo-letters">S</p>cience is a platform made for IGCSE and IB students. We aim to provide the support needed to pass their international examinations regarding Computer Science. <br /><br /> The website is still under construction.
                         </Box>
                     </Box>
                 </Section>
 
                 <Section delay = {0.9}>
                     <Box mt = {16} px = {10}>
-                        <Heading as = "h2" variant = "section-title" color = {textColor} fontSize = {{base: 45, md: 50}}>
+                        <Heading as = "h2" variant = "section-title" color = {textColor} fontSize = {{base: 40, md: 50}}>
                             IGCSE Topics
                         </Heading>
                         <Box mt = {5} px = {10}>
@@ -67,7 +67,7 @@ const Page = () => {
 
                 <Section delay = {1.7}>
                     <Box mt = {16} px = {10}>
-                        <Heading as = "h2" variant = "section-title" color = {textColor} fontSize = {{base: 45, md: 50}}>
+                        <Heading as = "h2" variant = "section-title" color = {textColor} fontSize = {{base: 40, md: 50}}>
                             IB Topics
                         </Heading>
                         <Box mt = {5} px = {10}>
