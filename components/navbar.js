@@ -53,7 +53,7 @@ const Navbar = props => {
             wrap = "wrap"
             align = "center"
             justify = "space-between">
-                <Flex align = "center" mt = {2} mr = {5}>
+                <Flex align = "center" mt = {2} mr = {5} ml = {3}>
                     <NextLink href = "/" path = {path}>
                         <a>
                             <Heading as = "h1" fontSize = {30} fontFamily = "Trap" fontWeight = "normal" color = "#A60067">
