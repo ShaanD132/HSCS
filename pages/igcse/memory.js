@@ -5,6 +5,7 @@ import Section from "../../components/layouts/section"
 const IgMemory = () => {
     const textColor = useColorModeValue("#1B1725", "#B9D8C2")
 
+
     return(
         <Layout>
             <Section delay = {0.1}>
@@ -14,13 +15,13 @@ const IgMemory = () => {
                             Topic 8 - Memory and Data Storage
                         </Heading>
 
-                        <Box mt = {16} px = {5}>
-                            <Heading as = "h2" variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Zacbel X Medium" fontSize = {{base: 36, md: 40}}>
+                        <Box mt = {16} px = {8}>
+                            <Heading as = "h2" variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Outfit" fontSize = {{base: 36, md: 40}}>
                                 Memory and Storage
                             </Heading>
                             <Box mt = {8} px = {10}>
-                                <Heading as = "h3" fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 30, md: 35}}>
-                                    RAM
+                                <Heading as = "h3" fontWeight = "normal" color = {textColor} fontFamily = "Zacbel X" fontSize = {{base: 30, md: 35}}>
+                                    Random Access Memory (RAM)
                                 </Heading>
                                 <Box mt = {5} px = {7} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     RAM refers to a volatile (meaning temporary) memory. Volatile memory loses its contents once power is lost to the component.
@@ -36,7 +37,7 @@ const IgMemory = () => {
                                     </UnorderedList>
                                 </Box>
 
-                                <Box mt = {8} px = {7} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                <Box mt = {10} px = {7} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     It is used to store:
 
                                     <UnorderedList mt = {3} px = {8} fontSize = {{base: 16, md: 20}}>
@@ -54,7 +55,7 @@ const IgMemory = () => {
                                     </UnorderedList>
                                 </Box>
 
-                                <Box mt = {8} px = {7} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                <Box mt = {10} px = {7} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     For IGCSE exams, we define RAM as so:
 
                                     <UnorderedList mt = {3} px = {8} fontSize = {{base: 16, md: 20}}>
@@ -64,12 +65,16 @@ const IgMemory = () => {
                                     </UnorderedList>
                                 </Box>
 
-                                <Box mt = {8} px = {7} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                <Box mt = {10} px = {7} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     RAM is much faster to write and read to, compared to the hard-drive (whether it is SSD or HDD), this is because:
 
                                     <UnorderedList mt = {3} px = {8} fontSize = {{base: 16, md: 20}}>
                                         <ListItem py = {2}>
                                             It is located much closer to the CPU
+                                        </ListItem>
+
+                                        <ListItem py = {2}>
+                                            It has faster write/read speeds compared to the SSD/HDD
                                         </ListItem>
                                     </UnorderedList>
                                 </Box>
