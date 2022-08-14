@@ -25,16 +25,30 @@ const Fonts = () => (
     }
 
     @font-face {
-        font-family: "Outfit";
+        font-family: "Arual";
         src:
-            url("/fonts/Outfit-SemiBold.ttf")
+            url("/fonts/Arual.ttf")
             format("truetype");
     }
 
     @font-face {
-        font-family: "Zacbel X";
+        font-family: "Meedori Bold";
         src:
-            url("/fonts/zacbelx-medium.ttf")
+            url("/fonts/Meedori Sans Bold.ttf")
+            format("truetype");
+    }
+    
+    @font-face {
+        font-family: "Meedori Regular";
+        src:
+            url("/fonts/Meedori Sans Regular.ttf")
+            format("truetype");
+    }
+
+    @font-face {
+        font-family: "Red Rose";
+        src:
+            url("/fonts/Omega+Sans+Regular.ttf")
             format("truetype");
     }
 
