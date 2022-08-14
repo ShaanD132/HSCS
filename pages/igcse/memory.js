@@ -32,7 +32,7 @@ const IgMemory = () => {
                                         </ListItem>
 
                                         <ListItem py = {2}>
-                                            RAMs are volatile as once your laptop is shut down, the contents are lost: e.g. Word Document File you were writing but auto-save was off and you didn't save before it was shutting down.
+                                            RAMs are volatile as once your laptop is shut down, the contents are lost: e.g. Word Document File you were writing but auto-save was off and you didn&apos;t save before it was shutting down.
                                         </ListItem>
                                     </UnorderedList>
                                 </Box>
@@ -100,7 +100,7 @@ const IgMemory = () => {
                                         </ListItem>
 
                                         <ListItem py = {2}>
-                                            (imagine converting anaolgue data to digital data - electrical current present = 1, current not present = 0)
+                                            (imagine converting analogue data to digital data - electrical current present = 1, current not present = 0)
                                         </ListItem>
                                     </UnorderedList>
                                 </Box>
