@@ -10,10 +10,10 @@ const Notes = () => {
                 <Section delay = {0.1}>
                     <Box mt = {20}>
                         <Heading as = "h2" variant = "page-title" fontWeight = "normal" color = {textColor}>
-                            HSCS Welcomes You
+                            Under Construction
                         </Heading>
                         <Box  px = {10} mt = {8} fontFamily = "Hibana" fontSize = {23}>
-                            <p className = "logo-letters">H</p>igh-<p className = "logo-letters">S</p>chool <p className = "logo-letters">C</p>omputer <p className = "logo-letters">S</p>cience is a platform made for IGCSE and IB students. We aim to provide the support needed to pass their international examinations regarding Computer Science. <br /><br /> The website is still under construction.
+                            The Notes section is still under construction and should be ready by 29/08/22. Please be patient until then.
                         </Box>
                     </Box>
                 </Section>

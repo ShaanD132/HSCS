@@ -23,6 +23,13 @@ const Fonts = () => (
             url("/fonts/Evolventa-Bold.otf")
             format("opentype");
     }
+
+    @font-face {
+    font-family: "altertype";
+    src:
+        url("/fonts/altertype.otf")
+        format("opentype");
+    }
     
     @font-face {
         font-family: "Trap";
