@@ -98,7 +98,7 @@ const IgMemory = () => {
                                 Memory and Storage
                             </Heading>
 
-                            <Heading as = "h2" mt = {10} px = {5} variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 32, sm: 32, md: 35}}>
+                            <Heading as = "h2" mt = {10} px = {{base: 0, md: 5}} variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 32, sm: 32, md: 35}}>
                                 Primary Memory
                             </Heading>
 
@@ -303,11 +303,11 @@ const IgMemory = () => {
                                 </Box>
                             </Box>
 
-                            <Heading as = "h2" mt = {10} px = {5} variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 32, sm: 32, md: 35}}>
+                            <Heading as = "h2" mt = {10} px = {{base: 0, md: 5}} variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 32, sm: 32, md: 35}}>
                                 Secondary Memory
                             </Heading>
 
-                            <Heading as = "h2" mt = {10} px = {5} variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 32, sm: 32, md: 35}}>
+                            <Heading as = "h2" mt = {10} px = {{base: 0, md: 5}} variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 32, sm: 32, md: 35}}>
                                 Off-line Memory
                             </Heading>
 
