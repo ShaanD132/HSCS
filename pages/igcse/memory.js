@@ -11,7 +11,7 @@ const IgMemory = () => {
         <Layout>
             <Section delay = {0.1}>
                 <Container maxW = "container.lg">
-                    <Container position = "fixed" height = "100%" maxW = "container.lg" className = "scroll-container">
+                    <Container position = "fixed" maxW = "container.lg" className = "scroll-container">
                         <Link href = "#top" className = "scroll-top"><IconButton borderRadius = {100}  aria-label = "back-to-top" icon = {<ChevronUpIcon />} size = "lg" color = "white" /></Link>
                     </Container>
 
@@ -32,23 +32,23 @@ const IgMemory = () => {
                                     </Heading>
 
                                     <OrderedList px = {8}>
-                                        <Link href = "#ram">
-                                            <ListItem py = {2}>
+                                        <ListItem py = {2}>
+                                            <Link href = "#ram">
                                                 RAM
-                                            </ListItem>
-                                        </Link>
+                                            </Link>
+                                        </ListItem>
 
-                                        <Link href = "#dram">
-                                            <ListItem py = {2}>
+                                        <ListItem py = {2}>
+                                            <Link href = "#dram">
                                                 DRAM
-                                            </ListItem>
-                                        </Link>
+                                            </Link>
+                                        </ListItem>
 
-                                        <Link href = "#sram">
-                                            <ListItem py = {2}>
+                                        <ListItem py = {2}>
+                                            <Link href = "#sram">
                                                 SRAM
-                                            </ListItem>
-                                        </Link>
+                                            </Link>
+                                        </ListItem>
                                     </OrderedList>
                                 </Box>
 
@@ -58,17 +58,17 @@ const IgMemory = () => {
                                     </Heading>
 
                                     <OrderedList px = {8}>
-                                        <Link href = "#hdd">
-                                            <ListItem py = {2}>
+                                    <ListItem py = {2}>
+                                            <Link href = "#hdd">
                                                 HDD (Hard-Disk Drive)
-                                            </ListItem>
-                                        </Link>
+                                            </Link>
+                                        </ListItem>
 
-                                        <Link href = "#ssd">
-                                            <ListItem py = {2}>
+                                        <ListItem py = {2}>
+                                            <Link href = "#ssd">
                                                 SSD (Solid-State Drive)
-                                            </ListItem>
-                                        </Link>
+                                            </Link>
+                                        </ListItem>
                                     </OrderedList>
                                 </Box>
 
@@ -78,17 +78,17 @@ const IgMemory = () => {
                                     </Heading>
 
                                     <OrderedList px = {8}>
-                                        <Link href = "#dvd">
-                                            <ListItem py = {2}>
+                                        <ListItem py = {2}>
+                                            <Link href = "#dvd">
                                                 DVD Basics
-                                            </ListItem>
-                                        </Link>
+                                            </Link>
+                                        </ListItem>
 
-                                        <Link href = "#dvd-ram">
-                                            <ListItem py = {2}>
+                                        <ListItem py = {2}>
+                                            <Link href = "#dvd-ram">
                                                 DVD-RAM
-                                            </ListItem>
-                                        </Link>
+                                            </Link>
+                                        </ListItem>
                                     </OrderedList>
                                 </Box>
                             </Box>

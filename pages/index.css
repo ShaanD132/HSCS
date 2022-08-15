@@ -6,12 +6,11 @@
     font-size: 28px;
 }
 
-.scroll-top {
-    position: fixed;
-    right: 15%;
+.scroll-container {
     margin-top: 78vh;
 }
 
-.scroll-container {
-    pointer-events: none;
+.scroll-top {
+    position: fixed;
+    right: 15%;
 }
