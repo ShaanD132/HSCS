@@ -8,12 +8,12 @@ const QuestionBank = () => {
         <Layout>
             <Container maxW = "container.lg">
                 <Section delay = {0.1}>
-                    <Box mt = {20}>
+                    <Box mt = {3}>
                         <Heading as = "h2" variant = "page-title" fontWeight = "normal" color = {textColor}>
                             Under Construction
                         </Heading>
                         <Box  px = {10} mt = {8} fontFamily = "Hibana" fontSize = {23}>
-                            The QuestionBank section is still under construction and should be ready by 14/09/22. Please be patient until then.
+                            The QuestionBank section is still under construction and should be ready by 30/09/22. Please be patient until then.
                         </Box>
                     </Box>
                 </Section>

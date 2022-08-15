@@ -25,15 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/igcse/memory": [
+    "/contact": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/igcse/memory.js"
+      "static/chunks/pages/contact.js"
     ],
-    "/notes": [
+    "/qb": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/notes.js"
+      "static/chunks/pages/qb.js"
     ]
   },
   "ampFirstPages": []

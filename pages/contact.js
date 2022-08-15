@@ -8,7 +8,7 @@ const QuestionBank = () => {
         <Layout>
             <Container maxW = "container.lg">
                 <Section delay = {0.1}>
-                    <Box mt = {20}>
+                    <Box mt = {3}>
                         <Heading as = "h2" variant = "page-title" fontWeight = "normal" color = {textColor}>
                             Under Construction
                         </Heading>
