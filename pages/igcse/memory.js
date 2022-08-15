@@ -6,7 +6,6 @@ import { ChevronUpIcon } from "@chakra-ui/icons"
 const IgMemory = () => {
     const textColor = useColorModeValue("#1B1725", "#B9D8C2")
 
-
     return(
         <Layout>
             <Section delay = {0.1}>
