@@ -9,7 +9,7 @@ const Notes = () => {
         <Layout>
             <Container maxW = "container.lg">
                 <Section delay = {0.1}>
-                    <Box mt = {20}>
+                    <Box mt = {3}>
                         <Heading as = "h2" variant = "page-title" fontWeight = "normal" color = {textColor} fontSize = {{base: 30,  sm: 40, md: 50}}>
                             Under Construction
                         </Heading>

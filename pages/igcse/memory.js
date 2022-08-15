@@ -1,6 +1,7 @@
-import { Box, Container, Heading, ListItem, UnorderedList, useColorModeValue } from "@chakra-ui/react"
+import { Box, Container, Heading, ListItem, OrderedList, UnorderedList, useColorModeValue, Link, IconButton } from "@chakra-ui/react"
 import Layout from "../../components/layouts/article"
 import Section from "../../components/layouts/section"
+import { ChevronUpIcon } from "@chakra-ui/icons"
 
 const IgMemory = () => {
     const textColor = useColorModeValue("#1B1725", "#B9D8C2")
@@ -10,17 +11,53 @@ const IgMemory = () => {
         <Layout>
             <Section delay = {0.1}>
                 <Container maxW = "container.lg">
-                    <Box mt = {20}>
-                        <Heading as = "h2" variant = "page-title" fontWeight = "normal" color = {textColor} fontSize = {{base: 30, sm: 40, md: 45}}>
+                    <Link href = "#top" className = "scroll-top"><IconButton borderRadius = {100} aria-label = "back-to-top" icon = {<ChevronUpIcon />} size = "lg" color = "white" /></Link>
+                    <Box>
+                        <Heading as = "h2" pt = {3} variant = "page-title" fontWeight = "normal" color = {textColor} fontSize = {{base: 30, sm: 40, md: 45}} id = "top">
                             Topic 8 - Memory and Data Storage
                         </Heading>
+
+                        <Box mt = {{base: 5, sm: 10}} px = {{base: 0, md: 10}}>
+                            <Heading as = "h2" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 27, sm: 35, md: 40}}>
+                                Table of Contents
+                            </Heading>
+
+                            <Box mt = {5} px = {{base: 0, md: 10}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                <OrderedList>
+                                    <Link href = "#ram">
+                                        <ListItem py = {2}>
+                                            RAM
+                                        </ListItem>
+                                    </Link>
+
+                                    <Link href = "#dram">
+                                        <ListItem py = {2}>
+                                            DRAM
+                                        </ListItem>
+                                    </Link>
+
+                                    <Link href = "#sram">
+                                        <ListItem py = {2}>
+                                            SRAM
+                                        </ListItem>
+                                    </Link>
+
+                                    <Link href = "#dvd">
+                                        <ListItem py = {2}>
+                                            DVD Basics
+                                        </ListItem>
+                                    </Link>
+                                </OrderedList>
+                            </Box>
+                        </Box>
 
                         <Box mt = {{base: 8, sm: 14}} px = {{base: 0, md: 10}}>
                             <Heading as = "h2" variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 36, sm: 36, md: 40}}>
                                 Memory and Storage
                             </Heading>
-                            <Box mt = {8} px = {{base: 0, md: 10}}>
-                                <Heading as = "h3" fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
+
+                            <Box px = {{base: 0, md: 10}} id = "ram">
+                                <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
                                     Random Access Memory (RAM)
                                 </Heading>
                                 <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
@@ -79,8 +116,9 @@ const IgMemory = () => {
                                     </UnorderedList>
                                 </Box>
                             </Box>
-                            <Box mt = {8} px = {{base: 0, md: 10}}>
-                                <Heading as = "h3" fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 30, md: 35}}>
+
+                            <Box px = {{base: 0, md: 10}}>
+                                <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 30, md: 35}} id = "dram">
                                     Dynamic Random Access Memory (DRAM)
                                 </Heading>
                                 <Box mt = {5} px = {{base: 0, md: 8}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
@@ -123,7 +161,7 @@ const IgMemory = () => {
                                     </UnorderedList>
                                 </Box>
 
-                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                <Box pt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     DRAMs have the following advantages over SRAM
 
                                     <UnorderedList mt = {3} px = {{base: 0, md: 8}} fontSize = {{base: 16, md: 20}}>
@@ -164,8 +202,9 @@ const IgMemory = () => {
                                 </Box>
 
                             </Box>
-                            <Box mt = {8} px = {{base: 0, md: 10}}>
-                                <Heading as = "h3" fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 30, md: 35}}>
+
+                            <Box px = {{base: 0, md: 10}}>
+                                <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 30, md: 35}} id = "sram">
                                     Static Random Access Memory (SRAM)
                                 </Heading>
 
@@ -215,6 +254,36 @@ const IgMemory = () => {
                                             The Cache Memory stores data or instructions that are frequently used (most applications use the same data and instructions several times, thus these are stored in the cache memory so that the computer operates faster)
                                         </ListItem>
                                     </UnorderedList>
+                                </Box>
+                            </Box>
+
+                            <Box px = {{base: 0, md: 10}} >
+                                <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 30, md: 35}} id = "dvd">
+                                    DVD Basics
+                                </Heading>
+
+                                <Box mt = {5} px = {{base: 0, md: 8}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    CDs and DVDs have several names
+                                </Box>
+
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    Most CDs you get with films or music on it are read-only. You cannot make any changes to its data.
+                                </Box>
+
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    CD-R and DVD-R means that the disc is a write-once disc. This means that it can only be written to once and then the user can only see the contents on it.
+                                </Box>
+
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    CD-RW and DVD-RW means that the disc is re-writeable. This means that the user can change the contents of the disc several times.
+                                </Box>
+
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    Standard CDs and DVDs do not allow the user to alter or delete the data.
+                                </Box>
+
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    The reason being that re-writable discs have a special surface that can be melted so that the marks disappear (because with CDs and DVDs we engrave the spiral track onto the surface).
                                 </Box>
                             </Box>
                         </Box>

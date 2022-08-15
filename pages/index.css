@@ -5,3 +5,9 @@
     font-family: Trap;
     font-size: 28px;
 }
+
+.scroll-top {
+    position: fixed;
+    margin-top: 78vh;
+    float: right;
+}
