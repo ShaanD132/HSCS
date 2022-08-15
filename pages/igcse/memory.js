@@ -11,7 +11,7 @@ const IgMemory = () => {
         <Layout>
             <Section delay = {0.1}>
                 <Container maxW = "container.lg">
-                    <Container position = "fixed" height = "100%" maxW = "container.lg">
+                    <Container position = "fixed" height = "100%" maxW = "container.lg" className = "scroll-container">
                         <Link href = "#top" className = "scroll-top"><IconButton borderRadius = {100}  aria-label = "back-to-top" icon = {<ChevronUpIcon />} size = "lg" color = "white" /></Link>
                     </Container>
 
@@ -32,11 +32,11 @@ const IgMemory = () => {
                                     </Heading>
 
                                     <OrderedList px = {8}>
-                                        <a href = "#ram">
+                                        <Link href = "#ram">
                                             <ListItem py = {2}>
                                                 RAM
                                             </ListItem>
-                                        </a>
+                                        </Link>
 
                                         <Link href = "#dram">
                                             <ListItem py = {2}>

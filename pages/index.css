@@ -11,3 +11,7 @@
     right: 15%;
     margin-top: 78vh;
 }
+
+.scroll-container {
+    pointer-events: none;
+}
