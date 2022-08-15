@@ -364,7 +364,7 @@ const IgMemory = () => {
 
                                     <Box mt = {10} align = "center">
                                         <Image src = "/images/DVD-RAM.jpeg" height = {200}/>
-                                        <Text mt = {4} fontFamily = "Hibana" fontSize = {{base: 12, md: 14}}>DVD-RAM Concentric Track</Text>
+                                        <Text mt = {4} fontFamily = "Zacbel" fontSize = {{base: 12, md: 14}}>DVD-RAM Concentric Track</Text>
                                     </Box>
                                 </Box>
 

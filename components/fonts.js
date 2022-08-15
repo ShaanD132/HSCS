@@ -30,6 +30,13 @@ const Fonts = () => (
             url("/fonts/Arual.ttf")
             format("truetype");
     }
+    
+    @font-face {
+        font-family: "Zacbel";
+        src:
+            url("/fonts/zacbelx-medium.ttf")
+            format("truetype");
+    }
 
     @font-face {
         font-family: "Meedori Bold";
