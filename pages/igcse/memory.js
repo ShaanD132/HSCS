@@ -32,11 +32,11 @@ const IgMemory = () => {
                                     </Heading>
 
                                     <OrderedList px = {8}>
-                                        <Link href = "#ram">
+                                        <a href = "#ram">
                                             <ListItem py = {2}>
                                                 RAM
                                             </ListItem>
-                                        </Link>
+                                        </a>
 
                                         <Link href = "#dram">
                                             <ListItem py = {2}>
