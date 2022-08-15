@@ -8,6 +8,6 @@
 
 .scroll-top {
     position: fixed;
+    right: 15%;
     margin-top: 78vh;
-    float: right;
 }

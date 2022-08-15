@@ -1,4 +1,4 @@
-import { Box, Container, Heading, ListItem, OrderedList, UnorderedList, useColorModeValue, Link, IconButton } from "@chakra-ui/react"
+import { Box, Container, Heading, ListItem, OrderedList, UnorderedList, Image, useColorModeValue, Link, IconButton, Text } from "@chakra-ui/react"
 import Layout from "../../components/layouts/article"
 import Section from "../../components/layouts/section"
 import { ChevronUpIcon } from "@chakra-ui/icons"
@@ -11,7 +11,10 @@ const IgMemory = () => {
         <Layout>
             <Section delay = {0.1}>
                 <Container maxW = "container.lg">
-                    <Link href = "#top" className = "scroll-top"><IconButton borderRadius = {100} aria-label = "back-to-top" icon = {<ChevronUpIcon />} size = "lg" color = "white" /></Link>
+                    <Container position = "fixed" height = "100%" maxW = "container.lg">
+                        <Link href = "#top" className = "scroll-top"><IconButton borderRadius = {100}  aria-label = "back-to-top" icon = {<ChevronUpIcon />} size = "lg" color = "white" /></Link>
+                    </Container>
+
                     <Box>
                         <Heading as = "h2" pt = {3} variant = "page-title" fontWeight = "normal" color = {textColor} fontSize = {{base: 30, sm: 40, md: 45}} id = "top">
                             Topic 8 - Memory and Data Storage
@@ -23,37 +26,81 @@ const IgMemory = () => {
                             </Heading>
 
                             <Box mt = {5} px = {{base: 0, md: 10}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
-                                <OrderedList>
-                                    <Link href = "#ram">
-                                        <ListItem py = {2}>
-                                            RAM
-                                        </ListItem>
-                                    </Link>
+                                <Box px = {3}>
+                                    <Heading as = "h2" fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 25, sm: 28, md: 30}}>
+                                        Primary Storage
+                                    </Heading>
 
-                                    <Link href = "#dram">
-                                        <ListItem py = {2}>
-                                            DRAM
-                                        </ListItem>
-                                    </Link>
+                                    <OrderedList px = {8}>
+                                        <Link href = "#ram">
+                                            <ListItem py = {2}>
+                                                RAM
+                                            </ListItem>
+                                        </Link>
 
-                                    <Link href = "#sram">
-                                        <ListItem py = {2}>
-                                            SRAM
-                                        </ListItem>
-                                    </Link>
+                                        <Link href = "#dram">
+                                            <ListItem py = {2}>
+                                                DRAM
+                                            </ListItem>
+                                        </Link>
 
-                                    <Link href = "#dvd">
-                                        <ListItem py = {2}>
-                                            DVD Basics
-                                        </ListItem>
-                                    </Link>
-                                </OrderedList>
+                                        <Link href = "#sram">
+                                            <ListItem py = {2}>
+                                                SRAM
+                                            </ListItem>
+                                        </Link>
+                                    </OrderedList>
+                                </Box>
+
+                                <Box px = {3} mt = {10}>
+                                    <Heading as = "h2" fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 25, sm: 28, md: 30}}>
+                                        Secondary Storage
+                                    </Heading>
+
+                                    <OrderedList px = {8}>
+                                        <Link href = "#hdd">
+                                            <ListItem py = {2}>
+                                                HDD (Hard-Disk Drive)
+                                            </ListItem>
+                                        </Link>
+
+                                        <Link href = "#ssd">
+                                            <ListItem py = {2}>
+                                                SSD (Solid-State Drive)
+                                            </ListItem>
+                                        </Link>
+                                    </OrderedList>
+                                </Box>
+
+                                <Box px = {3} mt = {10}>
+                                    <Heading as = "h2" fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 25, sm: 28, md: 30}}>
+                                        Off-Line Storage
+                                    </Heading>
+
+                                    <OrderedList px = {8}>
+                                        <Link href = "#dvd">
+                                            <ListItem py = {2}>
+                                                DVD Basics
+                                            </ListItem>
+                                        </Link>
+
+                                        <Link href = "#dvd-ram">
+                                            <ListItem py = {2}>
+                                                DVD-RAM
+                                            </ListItem>
+                                        </Link>
+                                    </OrderedList>
+                                </Box>
                             </Box>
                         </Box>
 
                         <Box mt = {{base: 8, sm: 14}} px = {{base: 0, md: 10}}>
                             <Heading as = "h2" variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 36, sm: 36, md: 40}}>
                                 Memory and Storage
+                            </Heading>
+
+                            <Heading as = "h2" mt = {10} px = {5} variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 32, sm: 32, md: 35}}>
+                                Primary Memory
                             </Heading>
 
                             <Box px = {{base: 0, md: 10}} id = "ram">
@@ -257,6 +304,14 @@ const IgMemory = () => {
                                 </Box>
                             </Box>
 
+                            <Heading as = "h2" mt = {10} px = {5} variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 32, sm: 32, md: 35}}>
+                                Secondary Memory
+                            </Heading>
+
+                            <Heading as = "h2" mt = {10} px = {5} variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 32, sm: 32, md: 35}}>
+                                Off-line Memory
+                            </Heading>
+
                             <Box px = {{base: 0, md: 10}} >
                                 <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 30, md: 35}} id = "dvd">
                                     DVD Basics
@@ -285,6 +340,34 @@ const IgMemory = () => {
                                 <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     The reason being that re-writable discs have a special surface that can be melted so that the marks disappear (because with CDs and DVDs we engrave the spiral track onto the surface).
                                 </Box>
+                            </Box>
+
+                            <Box px = {{base: 0, md: 10}} >
+                                <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 30, md: 35}} id = "dvd-ram">
+                                    DVD-RAM
+                                </Heading>
+
+                                <Box mt = {5} px = {{base: 0, md: 8}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    DVD-RAM does not use the same technology as DVDs and CDs. They do NOT use a spiral track.
+                                </Box>
+
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    They use concentric tracks (meaning many circles of varying diameters)
+                                </Box>
+
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    Using concentric tracks allows for reading and writing to occur at the same time
+                                </Box>
+
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    They allow a large number of read and write operations (100 000 times) and have great longevity (30+ years). Allowing them to be used for archiving.
+
+                                    <Box mt = {10} align = "center">
+                                        <Image src = "/images/DVD-RAM.jpeg" height = {200}/>
+                                        <Text mt = {4} fontFamily = "Hibana" fontSize = {{base: 12, md: 14}}>DVD-RAM Concentric Track</Text>
+                                    </Box>
+                                </Box>
+
                             </Box>
                         </Box>
                     </Box>

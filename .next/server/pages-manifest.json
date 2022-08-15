@@ -1,10 +1,5 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/igcse/memory": "pages/igcse/memory.js",
-  "/notes": "pages/notes.js",
   "/_error": "pages/_error.js",
-  "/qb": "pages/qb.js",
-  "/contact": "pages/contact.js"
+  "/_document": "pages/_document.js"
 }
