@@ -1,4 +1,4 @@
-import {Box, Heading, Container, useColorModeValue, OrderedList, ListItem} from "@chakra-ui/react"
+import {Box, Heading, Container, useColorModeValue, OrderedList, ListItem, Link} from "@chakra-ui/react"
 import Layout from "../components/layouts/article"
 import Section from "../components/layouts/section"
 
@@ -46,7 +46,9 @@ const Page = () => {
                                 </ListItem>
 
                                 <ListItem>
-                                    Memory and Data Storage
+                                    <Link href = "/igcse/memory">
+                                        Memory and Data Storage
+                                    </Link>
                                 </ListItem>
 
                                 <ListItem>
