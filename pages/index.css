@@ -14,3 +14,10 @@
     position: fixed;
     right: 15%;
 }
+
+@media (max-width: 1000px) {
+    .scroll-container {
+        margin-top: 70vh;
+    }
+}
+
