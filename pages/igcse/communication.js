@@ -1,4 +1,4 @@
-import { Box, Container, Heading, ListItem, OrderedList, UnorderedList, Image, useColorModeValue, Link, IconButton, Text } from "@chakra-ui/react"
+import { Box, Container, Heading, ListItem, OrderedList, UnorderedList, useColorModeValue, Link, IconButton } from "@chakra-ui/react"
 import Layout from "../../components/layouts/article"
 import Section from "../../components/layouts/section"
 import { ChevronUpIcon } from "@chakra-ui/icons"
@@ -209,7 +209,7 @@ const Communication = () => {
 
                                     <UnorderedList mt = {3} px = {{base: 0, md: 8}} fontSize = {{base: 16, md: 20}}>
                                         <ListItem py = {2}>
-                                            E.g. CCTV camera to Security Guard's Camera
+                                            E.g. CCTV camera to Security Guard&apos;s Camera
                                         </ListItem>
                                     </UnorderedList>
                                 </Box>
@@ -304,7 +304,7 @@ const Communication = () => {
                                                 </ListItem>
 
                                                 <ListItem py = {2}>
-                                                    The bits won't be transmitted accurately if there are differences in speed amongst the several wires/channels.
+                                                    The bits won&apos;t be transmitted accurately if there are differences in speed amongst the several wires/channels.
                                                 </ListItem>
 
                                                 <ListItem py = {2}>
@@ -323,19 +323,32 @@ const Communication = () => {
                                 </Heading>
 
                                 <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
-                                    They are a collection of microscopic electronic circuits sealed into a single plastic or ceramic package. Different ICs have different roles.
+                                    Computers require other devices apart from a CPU. Examples would be Mice, Keyboards, Monitors, etc. These are called peripherals. Buses are used to connect peripherals to the processor.
                                 </Box>
 
                                 <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
-                                    The CPU is considered to be an IC. Different ICs are connected through data buses. The parts of an IC work very quickly.
+                                    Peripherals work much slower than the processor. A serial bus is serial than a parallel bus but it is fast enough to manage peripherals.
                                 </Box>
 
                                 <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
-                                    
+                                    Since peripherals are made by many different companies, computer manufacturers would like to make it easier to connect peripherals to computers. The solution they thought of was an industry standard connection - USB.
                                 </Box>
 
                                 <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
-                                    The buses inside the CPU and between the RAM and CPU, both use parallel buses (buses using parallel data transmission). This heavily reduces data transfer time as the speed increases. However, by using parallel buses, there is less space available on the IC due to several channels/wires being used.
+                                    What is USB? It is an asynchronous serial connection. It is universal and can connect to almost any modern computer.
+                                </Box>
+
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    What happens when we plug a peripheral to our computers through USB?
+
+                                    <OrderedList mt = {3} px = {{base: 0, md: 8}} fontSize = {{base: 16, md: 20}}>
+                                        <ListItem py = {2}>
+                                            The computer automatically detects that a device is present.
+                                        </ListItem>
+                                        <ListItem py = {2}>
+                                            The device will be recognized automatically
+                                        </ListItem>
+                                    </OrderedList>
                                 </Box>
                             </Box>
 

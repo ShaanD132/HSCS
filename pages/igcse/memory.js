@@ -362,7 +362,7 @@ const IgMemory = () => {
                                     They allow a large number of read and write operations (100 000 times) and have great longevity (30+ years). Allowing them to be used for archiving.
 
                                     <Box mt = {10} align = "center">
-                                        <Image src = "/images/DVD-RAM.jpeg" height = {200}/>
+                                        <Image src = "/images/DVD-RAM.jpeg" height = {200} alt = "dvd-ram"/>
                                         <Text mt = {4} fontFamily = "Zacbel" fontSize = {{base: 12, md: 14}}>DVD-RAM Concentric Track</Text>
                                     </Box>
                                 </Box>
