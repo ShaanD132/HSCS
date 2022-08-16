@@ -180,6 +180,47 @@ const Communication = () => {
                                     </UnorderedList>
                                 </Box>
                             </Box>
+
+                            <Box px = {{base: 0, md: 10}} id = "dt">
+                                <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
+                                    Directions of Transmission
+                                </Heading>
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    Computers hold data in binary form. Computers can turn binary into a stream of signals which can be sent to other devices, examples are:
+
+                                    <UnorderedList mt = {3} px = {{base: 0, md: 8}} fontSize = {{base: 16, md: 20}}>
+                                        <ListItem py = {2}>
+                                            Electrical Pulses down metal cables
+                                        </ListItem>
+
+                                        <ListItem py = {2}>
+                                            Pulses of light in a fibre-optic cable
+                                        </ListItem>
+
+                                        <ListItem py = {2}>
+                                            Wireless Signals
+                                        </ListItem>
+                                    </UnorderedList>
+                                </Box>
+
+                                <Box mt = {10} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    3 main factors affect data transmission
+
+                                    <UnorderedList mt = {3} px = {{base: 0, md: 8}} fontSize = {{base: 16, md: 20}}>
+                                        <ListItem py = {2}>
+                                            Direction (is it in one direction or two directions?)
+                                        </ListItem>
+
+                                        <ListItem py = {2}>
+                                            How transmission is taking place (how many bits at a time?)
+                                        </ListItem>
+
+                                        <ListItem py = {2}>
+                                            How are the bits synchronized between devices (synchronous or asynchronous?)
+                                        </ListItem>
+                                    </UnorderedList>
+                                </Box>
+                            </Box>
                         </Box>
                     </Box>
                 </Container>
