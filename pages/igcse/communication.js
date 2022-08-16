@@ -11,12 +11,12 @@ const Communication = () => {
             <Section delay = {0.1}>
                 <Container maxW = "container.lg">
                     <Container position = "fixed" maxW = "container.lg" className = "scroll-container">
-                        <Link href = "#top" className = "scroll-top"><IconButton borderRadius = {100}  aria-label = "back-to-top" icon = {<ChevronUpIcon />} size = "lg" color = "white" /></Link>
+                        <Link href = "#top" className = "scroll-top"><IconButton borderRadius = {100} bg = {textColor} _hover = {{bg: textColor}}  aria-label = "back-to-top" icon = {<ChevronUpIcon />} size = "lg" color = {useColorModeValue("white", "black")} /></Link>
                     </Container>
 
                     <Box>
                         <Heading as = "h2" pt = {3} variant = "page-title" fontWeight = "normal" color = {textColor} fontSize = {{base: 30, sm: 40, md: 45}} id = "top">
-                            Topic 2 - Communication and Internet Technologies
+                            Topic 2 - Communication and the Internet
                         </Heading>
 
                         <Box mt = {{base: 5, sm: 10}} px = {{base: 0, md: 10}}>
@@ -138,14 +138,26 @@ const Communication = () => {
 
                                     <OrderedList px = {8}>
                                         <ListItem py = {2}>
-                                            <Link href = "#dvd">
-                                                DVD Basics
+                                            <Link href = "#ISP">
+                                                Internet Service Provider
                                             </Link>
                                         </ListItem>
 
                                         <ListItem py = {2}>
-                                            <Link href = "#dvd-ram">
-                                                DVD-RAM
+                                            <Link href = "#IP">
+                                                IP addresses
+                                            </Link>
+                                        </ListItem>
+
+                                        <ListItem py = {2}>
+                                            <Link href = "#MAC">
+                                                MAC addresses
+                                            </Link>
+                                        </ListItem>
+
+                                        <ListItem py = {2}>
+                                            <Link href = "#html">
+                                                HTML Structure and Presentation
                                             </Link>
                                         </ListItem>
                                     </OrderedList>
@@ -334,19 +346,24 @@ const Communication = () => {
                                     Since peripherals are made by many different companies, computer manufacturers would like to make it easier to connect peripherals to computers. The solution they thought of was an industry standard connection - USB.
                                 </Box>
 
-                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     What is USB? It is an asynchronous serial connection. It is universal and can connect to almost any modern computer.
                                 </Box>
 
-                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     What happens when we plug a peripheral to our computers through USB?
 
                                     <OrderedList mt = {3} px = {{base: 0, md: 8}} fontSize = {{base: 16, md: 20}}>
                                         <ListItem py = {2}>
                                             The computer automatically detects that a device is present.
                                         </ListItem>
+
                                         <ListItem py = {2}>
-                                            The device will be recognized automatically
+                                            The device will be recognized automatically (if it has already been used before) and the device driver needed (software that allows the peripheral to communicate with the computer) is loaded.
+                                        </ListItem>
+
+                                        <ListItem py = {2}>
+                                            If a new device is connected, the computer looks for a device driver that matches the device. If a suitable driver is not found, the user is prompted to download the necessary driver.
                                         </ListItem>
                                     </OrderedList>
                                 </Box>

@@ -1,11 +1,6 @@
 {
-  "/_document": "pages/_document.js",
-  "/contact": "pages/contact.js",
-  "/igcse/communication": "pages/igcse/communication.js",
-  "/igcse/memory": "pages/igcse/memory.js",
-  "/": "pages/index.js",
-  "/notes": "pages/notes.js",
-  "/qb": "pages/qb.js",
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js"
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/igcse/communication": "pages/igcse/communication.js"
 }
