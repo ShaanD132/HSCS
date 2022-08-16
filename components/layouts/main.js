@@ -11,9 +11,9 @@ const Main = ({children, router}) => {
                 <title>HSCS</title>
             </Head>
 
-            <Navbar path = {router.asPath} />
+            <Navbar path = {router.asPath} zIndex = {1} />
 
-            <Container maxW  = "container.xl" pt = {32}>
+            <Container maxW  = "container.xl" pt = {32} zIndex = {5}>
                 {children}
             </Container>
 

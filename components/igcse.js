@@ -25,23 +25,27 @@ const Igcse = () => {
                         </UnorderedList>
                 </ListItem>
 
-                <ListItem py = {1}>
-                    Communication and Internet Technologies
+                <NextLink href = "/igcse/communication" passHref>
+                    <Link>
+                        <ListItem py = {1}>
+                            Communication and Internet Technologies
 
-                    <UnorderedList fontSize = {{base: 18, md: 20}} py = {1} ml = {{base: 8, md: 14}}>
-                            <ListItem py = {1}>
-                                Data Transmission
-                            </ListItem>
+                            <UnorderedList fontSize = {{base: 18, md: 20}} py = {1} ml = {{base: 8, md: 14}}>
+                                    <ListItem py = {1}>
+                                        Data Transmission
+                                    </ListItem>
 
-                            <ListItem py = {1}>
-                                Error-Checking Methods
-                            </ListItem>
+                                    <ListItem py = {1}>
+                                        Error-Checking Methods
+                                    </ListItem>
 
-                            <ListItem py = {1}>
-                                Internet Technologies
-                            </ListItem>
-                        </UnorderedList>
-                </ListItem>
+                                    <ListItem py = {1}>
+                                        Internet Technologies
+                                    </ListItem>
+                                </UnorderedList>
+                        </ListItem>
+                    </Link>
+                </NextLink>
 
                 <ListItem py = {1}>
                     Logic Gates and Logic Circuits
