@@ -1,4 +1,4 @@
-import { Box, Container, Heading, ListItem, OrderedList, UnorderedList, useColorModeValue, Link, IconButton } from "@chakra-ui/react"
+import { Box, Container, Heading, ListItem, OrderedList, UnorderedList, useColorModeValue, Link, IconButton, Image } from "@chakra-ui/react"
 import Layout from "../../components/layouts/article"
 import Section from "../../components/layouts/section"
 import { ChevronUpIcon } from "@chakra-ui/icons"
@@ -421,10 +421,26 @@ const Communication = () => {
                                             </ListItem>
                                         </OrderedList>
                                 </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    There are two main drawbacks to using parity bits:
+                                        <OrderedList mt = {3} px = {{base: 0, md: 8}} fontSize = {{base: 16, md: 20}}>
+                                            <ListItem py = {2}>
+                                                If there are transposition errors. i.e. if a 2 bits switch places. By using a parity check, the number of 1s would still be odd, thus considered correct even if it is incorrect.
+                                                <Box mt = {6} mb = {6} align = "center">
+                                                    <Image src = "/images/parity.jpg" height = {100} alt = "parity"/>
+                                                </Box>
+                                            </ListItem>
+
+                                            <ListItem py = {2}>
+                                                If there are an even number of errors (e.g. 2 errors). This will lead to the errors cancelling each other out, this is because if there are two errors, it means that a 1 turns into a 0 AND a 0 turns into a 1 in the byte. The byte will still have an even/odd number of 1s as the number of 1s would not change.
+                                            </ListItem>
+                                        </OrderedList>
+                                </Box>
                             </Box>
 
                             <Box px = {{base: 0, md: 10}} id = "arq">
-                                <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
+                                <Heading as = "h3" pt = {16} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
                                     Automatic Repeat Request (ARQ)
                                 </Heading>
                                 <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
@@ -440,6 +456,42 @@ const Communication = () => {
 
                                 <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     It is important to remember the entire process of ARQ for the exams. In past papers, there are frequently questions about how ARQ works.
+                                </Box>
+                            </Box>
+
+                            <Box px = {{base: 0, md: 10}} id = "checksum">
+                                <Heading as = "h3" pt = {16} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
+                                    Checksum
+                                </Heading>
+
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    The whole process is as follows:
+                                        <UnorderedList mt = {3} px = {{base: 0, md: 8}} fontSize = {{base: 16, md: 20}}>
+                                            <ListItem py = {2}>
+                                                The sender will calculate the total denary value for a block of data/numbers. It will transmit this total along with the block of data.
+                                            </ListItem>
+
+                                            <ListItem py = {2}>
+                                                The receiver will calculate the total value of the block of data/numbers after transmission and it will compare the total it calculated against the original total.
+                                            </ListItem>
+
+                                            <ListItem py = {2}>
+                                                If they do not match, it means that an error has occurred. The data must then be re-sent.
+                                            </ListItem>
+                                        </UnorderedList>
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana" lineHeight = {1.8}>
+                                    Checksum can be used to check for data transmission errors even if the total does not represent a real total. For example, when sending phone numbers we can send and calculate a total. However since the total of phone numbers does not exist, this sort of total is called a hash total.
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    The main drawback of using Checksum is if: 
+                                        <UnorderedList mt = {3} px = {{base: 0, md: 8}} fontSize = {{base: 16, md: 20}}>
+                                            <ListItem py = {2}>
+                                                An error occurs when transmitting the total that was originally calculated. This means that even if the block of data was transmitted correctly, if the total was not, the data will be considered incorrect as the checksums do not match.
+                                            </ListItem>
+                                        </UnorderedList>
                                 </Box>
                             </Box>
                         </Box>
