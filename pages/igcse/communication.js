@@ -402,11 +402,44 @@ const Communication = () => {
                                 </Box>
 
                                 <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
-                                    There are two ways that parity checks can be used: either by using an even parity or an odd parity. Even parity refers to when the number of 1s in a byte (8 bits) is even. Odd parity refers to when the number of 1s in a byte is odd.
+                                    Parity bits can be added to the start or the end of a byte. When figuring out the values of the parity bit, you must ask yourself: &apos; Do I need to add a 1 at the start or end of the byte for the number of 1s in the byte to become even? &apos;
                                 </Box>
 
                                 <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     There are two ways that parity checks can be used: either by using an even parity or an odd parity. Even parity refers to when the number of 1s in a byte (8 bits) is even. Odd parity refers to when the number of 1s in a byte is odd.
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    In IGCSE exams, there are two types of questions that may come out for parity bits:
+                                        <OrderedList mt = {3} px = {{base: 0, md: 8}} fontSize = {{base: 16, md: 20}}>
+                                            <ListItem py = {2}>
+                                                It will indicate whether the question is using odd parity or even parity.
+                                            </ListItem>
+
+                                            <ListItem py = {2}>
+                                                It will show multiple bytes and state that a few of them are correct and a few are incorrect. It will ask you to figure out which ones are incorrect.
+                                            </ListItem>
+                                        </OrderedList>
+                                </Box>
+                            </Box>
+
+                            <Box px = {{base: 0, md: 10}} id = "arq">
+                                <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
+                                    Automatic Repeat Request (ARQ)
+                                </Heading>
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    The 2 most important aspects of ARQ are the fact that it uses an acknowledgement as well as a time-out.
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    The whole process is as follows:
+                                    <Box px = {5} py = {5}>
+                                        A transmitter sends data (as a packet). The receiver checks the packet for errors. If there are no errors, an acknowledgement is sent. If there is an error, the receiver will automatically send a request to the sender to re-send the data. <br/><br/> If no acknowledgement is received after re-sending the data, the data will be resent. The data is automatically resent several times until an acknowledgement is received or the request times out.
+                                    </Box>
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    It is important to remember the entire process of ARQ for the exams. In past papers, there are frequently questions about how ARQ works.
                                 </Box>
                             </Box>
                         </Box>
