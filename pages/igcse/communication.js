@@ -386,9 +386,30 @@ const Communication = () => {
                                     This heavily reduces data transfer time as the speed increases. However, by using parallel buses, there is less space available on the IC due to several channels/wires being used.
                                 </Box>
                             </Box>
-
                         </Box>
-                    </Box>
+
+                        <Box mt = {{base: 8, sm: 14}} px = {{base: 0, md: 10}} lineHeight = {1.6}></Box>
+                            <Heading as = "h2" variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 36, sm: 36, md: 40}}>
+                                Error-Checking Methods
+                            </Heading>
+
+                            <Box px = {{base: 0, md: 10}} id = "parity">
+                                <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
+                                    Parity Checking
+                                </Heading>
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    Parity is a mathematical term that means whether a number is odd or even. Parity checks are simple checks on data to see whether errors have occurred during transmission.
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    There are two ways that parity checks can be used: either by using an even parity or an odd parity. Even parity refers to when the number of 1s in a byte (8 bits) is even. Odd parity refers to when the number of 1s in a byte is odd.
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    There are two ways that parity checks can be used: either by using an even parity or an odd parity. Even parity refers to when the number of 1s in a byte (8 bits) is even. Odd parity refers to when the number of 1s in a byte is odd.
+                                </Box>
+                            </Box>
+                        </Box>
                 </Container>
             </Section>
         </Layout>

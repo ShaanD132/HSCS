@@ -30,7 +30,9 @@ const Page = () => {
                                 </ListItem>
 
                                 <ListItem>
+                                    <Link href = "/igcse/communication">
                                     Communication and Internet Technologies
+                                    </Link>
                                 </ListItem>
 
                                 <ListItem>
