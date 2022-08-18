@@ -581,7 +581,7 @@ const Communication = () => {
                                 </Box>
 
                                 <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
-                                    IP addresses are given to devices once they connect to the Internet. This is given to the computer by the ISP and it is unique for that session of Internet use. 
+                                    IP addresses are given to devices once they connect to the Internet. This is given to the computer by the ISP and it is unique for that session of Internet use.
                                 </Box>
 
                                 <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
