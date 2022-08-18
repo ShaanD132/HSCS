@@ -486,12 +486,66 @@ const Communication = () => {
                                 </Box>
 
                                 <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
-                                    The main drawback of using Checksum is if: 
+                                    The main drawback of using Checksum is if:
                                         <UnorderedList mt = {3} px = {{base: 0, md: 8}} fontSize = {{base: 16, md: 20}}>
                                             <ListItem py = {2}>
                                                 An error occurs when transmitting the total that was originally calculated. This means that even if the block of data was transmitted correctly, if the total was not, the data will be considered incorrect as the checksums do not match.
                                             </ListItem>
                                         </UnorderedList>
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    The way to calculate the Checksum is as follows:
+                                        <UnorderedList mt = {3} px = {{base: 0, md: 8}} fontSize = {{base: 16, md: 20}}>
+                                            <ListItem py = {2}>
+                                                Assume that the checksum is 1 byte in length. This means that its maximum value is (2<sup>8</sup> - 1) which is equal to 255. The reason we do (2<sup>8</sup> - 1) is because we ignore 00000000 as a possibility for the checksum value.
+                                            </ListItem>
+
+                                            <ListItem py = {2}>
+                                                X = The total sum of numbers
+                                            </ListItem>
+
+                                            <ListItem py = {2}>
+                                                Y = X / 256
+                                            </ListItem>
+
+                                            <ListItem py = {2}>
+                                                Round Y down ot the nearest whole number
+                                            </ListItem>
+
+                                            <ListItem py = {2}>
+                                                Z = Y * 256
+                                            </ListItem>
+
+                                            <ListItem py = {2}>
+                                                Checksum Value = X - Z
+                                            </ListItem>
+                                        </UnorderedList>
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    The process of calculating the checksum can be simplified by using the modulo function:
+                                    <Box py = {5} px = {5}>
+                                        Checksum Value = X % 256 (X modulo 256)
+                                    </Box>
+                                </Box>
+                            </Box>
+
+                            <Box px = {{base: 0, md: 10}} id = "echo">
+                                <Heading as = "h3" pt = {16} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
+                                    Echo Check
+                                </Heading>
+
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    An echo check is when the receiver re-sends the data received to the sender. The sender will compare the original data to the version of the data that was sent by the receiver.
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana" lineHeight = {1.8}>
+                                    However, this is not a very reliable way to check for errors. An error could occur when the receiver re-sends the data rather than when the data was initially sent to the receiver. It increases the risk of errors.
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    It can still be used for error checking if no errors occur during transmission when resending the data. The sender can accurately confirm the accuracy of the data between the data sent and the data received.
                                 </Box>
                             </Box>
                         </Box>
