@@ -139,7 +139,7 @@ const Communication = () => {
                                     <OrderedList px = {8}>
                                         <ListItem py = {2}>
                                             <Link href = "#ISP">
-                                                Internet Service Provider
+                                                Internet Service Provider (ISP)
                                             </Link>
                                         </ListItem>
 
@@ -546,6 +546,46 @@ const Communication = () => {
 
                                 <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     It can still be used for error checking if no errors occur during transmission when resending the data. The sender can accurately confirm the accuracy of the data between the data sent and the data received.
+                                </Box>
+                            </Box>
+                        </Box>
+
+                        <Box mt = {{base: 8, sm: 14}} px = {{base: 0, md: 10}} lineHeight = {1.6}>
+                            <Heading as = "h2" variant = "sub-title" fontWeight = "normal" color = {textColor} fontFamily = "Meedori Regular" fontSize = {{base: 36, sm: 36, md: 40}}>
+                                Internet Technologies
+                            </Heading>
+
+                            <Box px = {{base: 0, md: 10}} id = "ISP">
+                                <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
+                                    Internet Service Provider (ISP)
+                                </Heading>
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    Computers are connected to the internet through an ISP. E.g. Verzion in America.
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    It is an organization that allows people to use the Internet, they normally charge a monthly fee for this service.
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    The ISP sets up a username and password for the user and usually provides an email address as well.
+                                </Box>
+                            </Box>
+
+                            <Box px = {{base: 0, md: 10}} id = "IP">
+                                <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
+                                    IP addresses
+                                </Heading>
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    Each device on the Internet is given a unique IP address. It is a 32-bit number that is written like this: 192.102.100.1
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    IP addresses are given to devices once they connect to the Internet. This is given to the computer by the ISP and it is unique for that session of Internet use. 
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    Thus the IP address can change after a new session is started. An IP address gives the location of a device. It is important to remember that IP addresses use hexadecimal notation.
                                 </Box>
                             </Box>
                         </Box>
