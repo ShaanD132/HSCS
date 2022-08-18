@@ -525,7 +525,7 @@ const Communication = () => {
 
                                 <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     The process of calculating the checksum can be simplified by using the modulo function:
-                                    <Box py = {5} px = {5}>
+                                    <Box py = {5} px = {8}>
                                         Checksum Value = X % 256 (X modulo 256)
                                     </Box>
                                 </Box>
@@ -573,11 +573,11 @@ const Communication = () => {
                             </Box>
 
                             <Box px = {{base: 0, md: 10}} id = "IP">
-                                <Heading as = "h3" pt = {8} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
+                                <Heading as = "h3" pt = {16} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
                                     IP addresses
                                 </Heading>
                                 <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
-                                    Each device on the Internet is given a unique IP address. It is a 32-bit number that is written like this: 192.102.100.1
+                                    IP address stands for Internet Protocol address. Each device on the Internet is given a unique IP address. It is a 32-bit number that is written like this: 192.102.100.1
                                 </Box>
 
                                 <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
@@ -586,6 +586,47 @@ const Communication = () => {
 
                                 <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
                                     Thus the IP address can change after a new session is started. An IP address gives the location of a device. It is important to remember that IP addresses use hexadecimal notation.
+                                </Box>
+                            </Box>
+
+                            <Box px = {{base: 0, md: 10}} id = "MAC">
+                                <Heading as = "h3" pt = {16} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
+                                    MAC addresses
+                                </Heading>
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    MAC (Media Access Control) addresses are created along with your device (if it can connect to the Internet). Every device has a unique MAC address even if they are owned by the same user:
+                                    <Box mt = {5} px = {8}>
+                                        e.g. your Samsung Android and Dell Laptop have different MAC addresses
+                                    </Box>
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    They are used to identify specific devices connected to the Internet. The first half of a device's MAC address is the manufacturer's ID. The second half of the MAC address is the device ID.
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    Unlike the IP address, the MAC address does not change. It is important to remember that it is set by the manufacturer.
+                                </Box>
+                            </Box>
+
+                            <Box px = {{base: 0, md: 10}} id = "html">
+                                <Heading as = "h3" pt = {16} fontWeight = "normal" color = {textColor} fontFamily = "Arual" fontSize = {{base: 28, sm: 28, md: 32}}>
+                                    HTML structure & Presentation
+                                </Heading>
+                                <Box mt = {5} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    The structure of HTML is the essential part of the HTML document. It contains the meaning and structural mark-up of the document, i.e. how elements are ordered,
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    The presentation of HTML is the formatting of the website, it describes the style, color and look of the website.
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    In structure of an HTML website is like the skeleton and body while the presentation is the clothes and accessories of the website.
+                                </Box>
+
+                                <Box mt = {12} px = {{base: 0, md: 7}} fontSize = {{base: 18, md: 22}} fontFamily = "Hibana">
+                                    The HTML (HyperText Markup Language) file contains the structure while the CSS (Cascading Style Sheet) contains the presentation of the website.
                                 </Box>
                             </Box>
                         </Box>
